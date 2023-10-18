@@ -13,9 +13,9 @@ COMMON_LUNCH_CHOICES := \
     lineage_oxygen-eng
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/aosp_oxygen.mk
+    $(LOCAL_DIR)/derp_oxygen.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_oxygen-user \
-    aosp_oxygen-userdebug \
-    aosp_oxygen-eng
+    derp_oxygen-user \
+    derp_oxygen-userdebug \
+    derp_oxygen-eng
