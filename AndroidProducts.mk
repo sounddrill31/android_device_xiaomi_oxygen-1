@@ -4,18 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_oxygen.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_oxygen-user \
-    lineage_oxygen-userdebug \
-    lineage_oxygen-eng
-
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/aosp_oxygen.mk
+    $(LOCAL_DIR)/cherish_oxygen.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_oxygen-user \
-    aosp_oxygen-userdebug \
-    aosp_oxygen-eng
+    cherish_oxygen-user \
+    cherish_oxygen-userdebug \
+    cherish_oxygen-eng
