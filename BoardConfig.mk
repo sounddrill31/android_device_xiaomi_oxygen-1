@@ -26,8 +26,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.android_dt_dir=/non-existent androidboot.boot_devices=soc/7824900.sdhci
-BOARD_VENDOR_KERNEL_MODULES += $(wildcard device/xiaomi/kernel-mithorium/oxygen/*.ko)
-
+#BOARD_VENDOR_KERNEL_MODULES += $(wildcard device/xiaomi/kernel-mithorium/oxygen/*.ko)
+TARGET_KERNEL_CONFIG := msm8953-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/oxygen
 # Partitions
 BOARD_USES_METADATA_PARTITION := true
 

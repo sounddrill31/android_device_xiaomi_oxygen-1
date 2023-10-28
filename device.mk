@@ -49,8 +49,8 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/)
 
 # Kernel
-PRODUCT_COPY_FILES += \
-    device/xiaomi/kernel-mithorium/oxygen/Image.gz-dtb:kernel
+#PRODUCT_COPY_FILES += \
+#    device/xiaomi/kernel-mithorium/oxygen/Image.gz-dtb:kernel
 
 # Sensors
 PRODUCT_COPY_FILES += \
