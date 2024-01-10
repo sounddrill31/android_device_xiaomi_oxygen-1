@@ -81,3 +81,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/biometrics/sepolicy
 
 # Inherit from the proprietary version
 include vendor/xiaomi/oxygen/BoardConfigVendor.mk
+
+#Build Hacks
+BUILD_BROKEN_DUP_RULES := true
