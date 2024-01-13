@@ -34,3 +34,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V11.0.2.0.NDDMIXM:user/release-keys"
+
+# Fix "soong_namespace": namespace vendor/qcom/opensource/display does not exist / https://review.arrowos.net/c/ArrowOS/android_vendor_arrow/+/20740/1/config/BoardConfigQcom.mk#122
+TARGET_USE_DISPLAY_VENDOR_FREEZER := false
