@@ -13,9 +13,9 @@ COMMON_LUNCH_CHOICES := \
     lineage_oxygen-eng
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/cipher_oxygen.mk
+    $(LOCAL_DIR)/derp_oxygen.mk
 
 COMMON_LUNCH_CHOICES += \
-    cipher_oxygen-user \
-    cipher_oxygen-userdebug \
-    cipher_oxygen-eng
+    derp_oxygen-user \
+    derp_oxygen-userdebug \
+    derp_oxygen-eng

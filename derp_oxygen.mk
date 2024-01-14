@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The CipherOS Project
+# Copyright (C) 2024 The DerpFest Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -9,15 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common CipherOS stuff.
-$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
+# Inherit some common DERP stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from oxygen device
 $(call inherit-product, device/xiaomi/oxygen/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oxygen
-PRODUCT_NAME := cipher_oxygen
+PRODUCT_NAME := derp_oxygen
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI MAX 2
@@ -32,5 +32,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/oxygen/oxygen:7.1.1/NMF26F/V11.0.2.0.NDDMIXM:user/release-keys"
 
-# CipherOS
+# DerpFest
 TARGET_BOOT_ANIMATION_RES := 1080
